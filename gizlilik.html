@@ -11,7 +11,7 @@ h1{font-size:1.6rem}h2{font-size:1.15rem;margin-top:1.8rem}hr{margin:2.5rem 0}
 </head>
 <body>
 <h1>Gizlilik Politikası</h1>
-<p><strong>İmam-ı Azam Eğitim Merkezi uygulaması</strong> — Son güncelleme: 15.11.2026</p>
+<p><strong>İmam-ı Azam Eğitim Merkezi uygulaması</strong> — Son güncelleme: 24.11.2026</p>
 
 <h2>1. Kimiz</h2>
 <p>Uygulama, Houthalen (Belçika) merkezli İmam-ı Azam Eğitim Merkezi'nin öğrenci, veli, hoca ve yöneticileri içindir. Veri sorumlusu: İmam-ı Azam Eğitim Merkezi. İletişim: farukozdemir@outlook.be, Bergstraat 36, 3530 Houthalen-Helchteren, Belgie.</p>
@@ -22,6 +22,7 @@ h1{font-size:1.6rem}h2{font-size:1.15rem;margin-top:1.8rem}hr{margin:2.5rem 0}
 <li><strong>Eğitim kayıtları:</strong> devamsızlık, gezi yoklaması, sınav ve test sonuçları, karne, ders özetlerinin okunma durumu.</li>
 <li><strong>Yatakhane kayıtları:</strong> Cuma yoklaması ve haftalık oda puanı.</li>
 <li><strong>İletişim:</strong> duyurular ve uygulama içi mesajlar.</li>
+<li><strong>Bildirim kodu:</strong> telefona bildirim gönderebilmek için cihazın bildirim kodu (izin verilirse). Çıkış yapınca silinir.</li>
 <li><strong>Aidat bilgisi:</strong> aylık ödeme durumu (yalnızca yöneticiler ve ilgili veli görür).</li>
 </ul>
 <p>Konum, rehber, kamera veya fotoğraf arşivi verisi toplamıyoruz. Reklam ve izleme (takip) yoktur.</p>
@@ -34,13 +35,14 @@ h1{font-size:1.6rem}h2{font-size:1.15rem;margin-top:1.8rem}hr{margin:2.5rem 0}
 
 <h2>5. Nerede saklanır</h2>
 <p>Veriler, Supabase altyapısında (veritabanı hizmeti) şifreli bağlantı ve erişim kuralları (satır düzeyinde yetkilendirme) ile saklanır. Supabase, bizim adımıza veri işleyen hizmet sağlayıcıdır.</p>
+<p>Telefon bildirimleri Google Firebase Cloud Messaging (iPhone'da ayrıca Apple) üzerinden iletilir. Bildirimde yalnızca duyuru başlığı veya mesajı gönderenin adı ve mesajın ilk 120 karakteri bulunur. Bildirimleri telefonun ayarlarından kapatabilirsiniz.</p>
 <p>Yöneticilerin yüklediği ders özeti PDF'leri, test sorusu taslağı hazırlamak için Anthropic (Claude) yapay zekâ hizmetine gönderilebilir. Bu dosyalar yalnızca ders içeriğidir; öğrenci, veli veya hoca kişisel verisi gönderilmez.</p>
 
 <h2>6. Çocukların verisi</h2>
 <p>Uygulamayı kullanan öğrenciler küçük yaştadır. Hesaplar okul yönetimi tarafından açılır; öğrenciler kendi başlarına hesap oluşturmaz. Veriler yalnızca eğitim amacıyla işlenir.</p>
 
 <h2>7. Saklama süresi</h2>
-<p>Veriler öğrencinin kaydı süresince ve eğitim kayıtlarının tutulması gereken makul süre boyunca saklanır, sonra silinir veya anonimleştirilir.</p>
+<p>Veriler öğrencinin kaydı süresince ve eğitim kayıtlarının tutulması gereken makul süre boyunca saklanır, sonra silinir veya anonimleştirilir. Veri kaybına karşı haftalık güvenlik yedeği alınır; yedekler 26 hafta saklanır ve sonra otomatik silinir. Hesabını uygulamadan silen kişinin verileri hemen silinir, yedeklerdeki kopyaları en geç 26 hafta içinde silinir. Hesap silindiğinde okul yönetimine ad, soyad, rol ve sınıf bilgisiyle bildirim gider; bu bildirim kaydı da 26 hafta sonra silinir.</p>
 
 <h2>8. Haklarınız</h2>
 <p>GDPR/AVG kapsamında verilerinize erişme, düzeltme, silme ve işlemeye itiraz etme hakkınız vardır. Hesabınızın veya verilerinizin silinmesi için yukarıdaki adrese yazabilirsiniz. Belçika Veri Koruma Otoritesi'ne (<a href="https://www.gegevensbeschermingsautoriteit.be">gegevensbeschermingsautoriteit.be</a>) şikâyet hakkınız saklıdır.</p>
@@ -48,7 +50,7 @@ h1{font-size:1.6rem}h2{font-size:1.15rem;margin-top:1.8rem}hr{margin:2.5rem 0}
 <hr>
 
 <h1>Privacy Policy</h1>
-<p><strong>İmam-ı Azam Education Center app</strong> — Last updated: 15 Nov 2026</p>
+<p><strong>İmam-ı Azam Education Center app</strong> — Last updated: 24 Nov 2026</p>
 
 <h2>1. Who we are</h2>
 <p>This app is for students, parents, teachers and administrators of İmam-ı Azam Education Center in Houthalen, Belgium. Controller: İmam-ı Azam Education Center. Contact: farukozdemir@outlook.be, Bergstraat 36, 3530 Houthalen-Helchteren, Belgium.</p>
@@ -59,6 +61,7 @@ h1{font-size:1.6rem}h2{font-size:1.15rem;margin-top:1.8rem}hr{margin:2.5rem 0}
 <li><strong>Education records:</strong> attendance, trip attendance, exam and test results, report cards, read status of lesson summaries.</li>
 <li><strong>Dormitory records:</strong> Friday roll call and weekly room score.</li>
 <li><strong>Communication:</strong> announcements and in-app messages.</li>
+<li><strong>Notification token:</strong> the device's push notification token (if permitted), so we can send notifications to the phone. It is deleted when you sign out.</li>
 <li><strong>Tuition:</strong> monthly payment status (visible only to administrators and the related parent).</li>
 </ul>
 <p>We do not collect location, contacts, camera or photo library data. There is no advertising and no tracking.</p>
@@ -71,13 +74,14 @@ h1{font-size:1.6rem}h2{font-size:1.15rem;margin-top:1.8rem}hr{margin:2.5rem 0}
 
 <h2>5. Storage</h2>
 <p>Data is stored with Supabase (database hosting) over encrypted connections and with row-level access rules. Supabase acts as a processor on our behalf.</p>
+<p>Push notifications are delivered via Google Firebase Cloud Messaging (and Apple on iPhone). A notification contains only the announcement title, or the sender's name and the first 120 characters of the message. You can turn notifications off in your phone's settings.</p>
 <p>Lesson-summary PDFs uploaded by administrators may be sent to the Anthropic (Claude) AI service to draft quiz questions. These files contain lesson content only; no student, parent or teacher personal data is sent.</p>
 
 <h2>6. Children</h2>
 <p>Student users are minors. Accounts are created by school administration; students cannot sign up on their own. Data is processed for educational purposes only.</p>
 
 <h2>7. Retention</h2>
-<p>Data is kept while the student is enrolled and for a reasonable period required for school records, then deleted or anonymised.</p>
+<p>Data is kept while the student is enrolled and for a reasonable period required for school records, then deleted or anonymised. A weekly backup is taken to protect against data loss; backups are kept for 26 weeks and then deleted automatically. When a user deletes their account in the app, their data is deleted immediately and copies in backups are removed within 26 weeks at the latest. When an account is deleted, school administration is notified with the user's name, role and class; this notice is also deleted after 26 weeks.</p>
 
 <h2>8. Your rights</h2>
 <p>Under the GDPR you may request access, correction, deletion, or object to processing. To request deletion of your account or data, write to the address above. You may lodge a complaint with the Belgian Data Protection Authority (<a href="https://www.gegevensbeschermingsautoriteit.be">gegevensbeschermingsautoriteit.be</a>).</p>
